@@ -22,11 +22,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
 
-package dk.itu.moapd.scootersharing.labp
+package dk.itu.moapd.scootersharing.dlha
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import dk.itu.moapd.scootersharing.labp.databinding.ActivityMainBinding
+import dk.itu.moapd.scootersharing.dlha.databinding.ActivityMainBinding
 
 /**
  * This is the main class that handles the main page for adding a scooter.

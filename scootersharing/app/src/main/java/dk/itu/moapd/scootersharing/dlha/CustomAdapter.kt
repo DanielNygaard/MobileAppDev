@@ -1,10 +1,10 @@
-package dk.itu.moapd.scootersharing.labp
+package dk.itu.moapd.scootersharing.dlha
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import dk.itu.moapd.scootersharing.labp.databinding.ListRidesBinding
+import dk.itu.moapd.scootersharing.dlha.databinding.ListRidesBinding
 
 class CustomAdapter(private val data: List<Scooter>, private val clickListener: OnItemClickListener) :
         RecyclerView.Adapter<CustomAdapter.ViewHolder>() {

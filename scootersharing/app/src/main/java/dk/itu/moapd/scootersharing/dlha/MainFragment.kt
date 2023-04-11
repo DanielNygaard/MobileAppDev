@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
 
-package dk.itu.moapd.scootersharing.labp
+package dk.itu.moapd.scootersharing.dlha
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -32,7 +32,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import dk.itu.moapd.scootersharing.labp.databinding.FragmentMainBinding
+import dk.itu.moapd.scootersharing.dlha.databinding.FragmentMainBinding
 
 
 /**

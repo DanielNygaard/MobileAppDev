@@ -1,4 +1,4 @@
-package dk.itu.moapd.scootersharing.labp
+package dk.itu.moapd.scootersharing.dlha
 
 import android.content.Context
 import android.os.Bundle
@@ -8,38 +8,36 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import com.google.android.material.snackbar.Snackbar
-import dk.itu.moapd.scootersharing.labp.databinding.FragmentStartRideBinding
+import dk.itu.moapd.scootersharing.dlha.databinding.FragmentUpdateRideBinding
 
 
-class StartRideFragment : Fragment() {
+class UpdateRideFragment : Fragment() {
 
     companion object {
         private val TAG = MainActivity :: class . qualifiedName
     }
 
-    private lateinit var startRideFragment: FragmentStartRideBinding
-    private val scooter: Scooter = Scooter("", "", System.currentTimeMillis() )
-
-
-
+    private lateinit var updateRideFragment: FragmentUpdateRideBinding
+    private val scooter: Scooter = Scooter("", "", System.currentTimeMillis())
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        startRideFragment =
-            FragmentStartRideBinding.inflate(layoutInflater, container, false)
-        return startRideFragment.root
+        updateRideFragment =
+            FragmentUpdateRideBinding.inflate(layoutInflater, container, false)
+        return updateRideFragment.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        startRideFragment.apply {
-            startRideButton.setOnClickListener {
+        updateRideFragment.apply {
+            updateRideButton.setOnClickListener {
                 // Checks that fields are not empty
                 if (editTextName.text?.isNotEmpty() == true && editTextLocation.text?.isNotEmpty() == true) {
                     //val name = editTextName.text.toString().trim()
@@ -62,24 +60,22 @@ class StartRideFragment : Fragment() {
                      */
 
                     // Hide the virtual keyboard.
-                    val imm = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+                    val imm = context?.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
                     imm?.hideSoftInputFromWindow(it.windowToken, 0)
 
                     showMessage()
-
-                    Navigation.findNavController(view).navigate(R.id.action_startRideFragment_to_mainFragment)
-
+                    val bundle = bundleOf("scooter" to scooter)
+                    Navigation.findNavController(view).navigate(R.id.action_updateRideFragment_to_mainFragment, bundle)
                 }
             }
         }
     }
-
     /**
      * Prints the added scooter to the console. This is for testing purpose.
      */
     private fun showMessage() {
         Log.d(TAG, scooter.toString())
-        Snackbar.make(startRideFragment.root, scooter.toString(), Snackbar.LENGTH_SHORT)
+        Snackbar.make(updateRideFragment.root, scooter.toString(), Snackbar.LENGTH_SHORT)
             .show()
     }
 

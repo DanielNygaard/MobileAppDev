@@ -6,7 +6,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="dk.itu.moapd.scootersharing.labp.MainFragment"
+        android:name="dk.itu.moapd.scootersharing.dlha.MainFragment"
         android:label="MainFragment"
         tools:layout="@layout/fragment_main">
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/startRideFragment"
-        android:name="dk.itu.moapd.scootersharing.labp.StartRideFragment"
+        android:name="dk.itu.moapd.scootersharing.dlha.StartRideFragment"
         android:label="StartRideFragment"
         tools:layout="@layout/fragment_start_ride">
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateRideFragment"
-        android:name="dk.itu.moapd.scootersharing.labp.UpdateRideFragment"
+        android:name="dk.itu.moapd.scootersharing.dlha.UpdateRideFragment"
         android:label="UpdateRideFragment"
         tools:layout="@layout/fragment_update_ride" >
         <argument

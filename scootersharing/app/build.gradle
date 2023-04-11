@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'dk.itu.moapd.scootersharing.labp'
+    namespace 'dk.itu.moapd.scootersharing.dlha'
     compileSdk 33
 
     defaultConfig {
-        applicationId "dk.itu.moapd.scootersharing.labp"
+        applicationId "dk.itu.moapd.scootersharing.dlha"
         minSdk 24
         targetSdk 33
         versionCode 1
