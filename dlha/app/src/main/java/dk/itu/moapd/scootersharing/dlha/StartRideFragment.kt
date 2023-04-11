@@ -12,7 +12,7 @@ import androidx.navigation.Navigation
 import com.google.android.material.snackbar.Snackbar
 import dk.itu.moapd.scootersharing.dlha.databinding.FragmentStartRideBinding
 
-    class StartRideFragment : Fragment() {
+class StartRideFragment : Fragment() {
 
     companion object {
         private val TAG = MainActivity :: class . qualifiedName

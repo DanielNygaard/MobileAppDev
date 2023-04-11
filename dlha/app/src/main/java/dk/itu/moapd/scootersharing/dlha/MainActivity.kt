@@ -34,34 +34,13 @@ import dk.itu.moapd.scootersharing.dlha.databinding.ActivityMainBinding
  * This is the main class that handles the main page for adding a scooter.
  */
 class MainActivity : AppCompatActivity() {
-    companion object {
-        lateinit var ridesDB : RidesDB
-        private lateinit var adapter: CustomArrayAdapter
-    }
-
 
     private lateinit var mainBinding: ActivityMainBinding
 
-    private val scooter: Scooter = Scooter("", "", 0L)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_main)
-
-        /*val fragment = MainFragment()
-        supportFragmentManager
-            .beginTransaction()
-            .add(R.id.fragment_container, fragment)
-            .commit()*/
-
-        //WindowCompat.setDecorFitsSystemWindows(window, false)
-
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
-
-
-
-
+        setContentView(mainBinding.root)
     }
 }
 

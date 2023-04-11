@@ -26,7 +26,7 @@
             app:destination="@id/mainFragment" />
         <argument
             android:name="scooter"
-            app:argType="dk.itu.moapd.scootersharing.labp.Scooter" />
+            app:argType="dk.itu.moapd.scootersharing.dlha.Scooter" />
     </fragment>
     <fragment
         android:id="@+id/updateRideFragment"
@@ -35,7 +35,7 @@
         tools:layout="@layout/fragment_update_ride" >
         <argument
             android:name="scooter"
-            app:argType="dk.itu.moapd.scootersharing.labp.Scooter" />
+            app:argType="dk.itu.moapd.scootersharing.dlha.Scooter" />
         <action
             android:id="@+id/action_updateRideFragment_to_mainFragment"
             app:destination="@id/mainFragment" />

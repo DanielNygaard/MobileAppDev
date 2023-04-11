@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".StartRideFragment">
+    tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +14,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name">
+            android:hint="@string/name_hint_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_name"
@@ -34,7 +33,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Location">
+            android:hint="@string/location_hint_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_location"
@@ -53,7 +52,6 @@
         android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_text"
+        android:text="@string/start_ride_text"
         android:id="@+id/start_ride_button" />
-
 </LinearLayout>

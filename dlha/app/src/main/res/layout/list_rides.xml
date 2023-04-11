@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/name"
+    <TextView android:id="@+id/scooterName"
+        android:textSize="16sp"
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/location"
+    <TextView android:id="@+id/scooterLocation"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/timestamp"
+    <TextView android:id="@+id/scooterTimestamp"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_weight="1"
-        android:gravity="top" />
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

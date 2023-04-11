@@ -41,10 +41,10 @@ import dk.itu.moapd.scootersharing.dlha.databinding.FragmentMainBinding
 /**
  * This is the main class that handles the main page for adding a scooter.
  */
-class MainFragment : Fragment(), CustomArrayAdapter.OnItemClickListener {
+class MainFragment : Fragment(), CustomAdapter.OnItemClickListener {
 
     companion object {
-        private lateinit var adapter: CustomArrayAdapter
+        private lateinit var adapter: CustomAdapter
         lateinit var ridesDB : RidesDB
     }
 
